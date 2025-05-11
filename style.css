@@ -3,4 +3,64 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  /* background-color: burlywood; */
+}
+
+.body-container {
+  /* I created a grid to help map out the website. Right now all this is doing is mapping out my thumbnail container. However I plan to use this page as my social media portfolio, and would like additional boxes on the page that have some text about me and my work. So this will come in handy as the page develops */
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 4fr;
+}
+
+#thumbnail-container {
+  display: flex;
+  background-color: #d9f057;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  font-size: 1rem;
+  /* Selecting where the container will begin and end */
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 2;
+}
+
+#full-screen-container {
+  /* I decided to set the container to the width and height of the entire page, using the grid, and then have the full screen images be in the center of the page. I initially messed around with having the fullscreen image fill the entire page, but as I will be most likely be using a range of different resolutions, I thought it'd look better to instead not worry about filling the page and instead just have the image in the center and not be cropped. */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  /* background-size: contain; */
+  object-fit: contain;
+  margin: 0;
+  z-index: -1;
+  /* height: 100vh; */
+  background-color: #eef9d3;
+  overflow: hidden;
+}
+.thumbnail-image {
+  width: 200px;
+}
+
+.large-thumbnail-image {
+  /* I was initially confused on where my display:flex should be, in here or in the container. It technically works with both however I then realised that I did not need to have this in here. */
+  /* display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; */
+  height: 100vh;
+  border: solid 2px #000000;
 }
