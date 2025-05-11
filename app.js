@@ -12,7 +12,7 @@ console.info("Hello World");
 const images = [
   {
     src: "assets/images/aleksandra-gencheva-e9z-JEG6BDo-unsplashmed.jpg",
-    alt: "meaningful description of my image",
+    alt: "a green pistachio cheesecake ",
     // srcSet: ,
     // imgName: ,
     // width:,
@@ -20,11 +20,11 @@ const images = [
   },
   {
     src: "assets/images/medium qual example image.jpg",
-    alt: "meaningful description of my image",
+    alt: "multiple small pots of blueberry cheesecake",
   },
   {
     src: "assets/images/rosa-sepanta-LzHrmneJJfA-unsplashmed.jpg",
-    alt: "meaningful description of my image",
+    alt: "a slice of chocolate cheesecake",
   },
 ];
 
